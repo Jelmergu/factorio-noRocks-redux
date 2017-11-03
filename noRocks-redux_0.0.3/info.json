@@ -1,7 +1,7 @@
 {
 "name": "noRocks-redux",
 "title": "noRocks Redux",
-"version": "0.0.1",
+"version": "0.0.3",
 "date": "2017-11-3",
 "author": "Jelmergu",
 "dependencies": ["base >= 0.15"],
