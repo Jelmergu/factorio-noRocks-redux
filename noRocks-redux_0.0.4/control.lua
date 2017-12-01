@@ -3,9 +3,9 @@ script.on_event(defines.events.on_chunk_generated, function(e)
 
      -- remove everything we don't want
     for key, entity in pairs(e.surface.find_entities(e.area)) do
-        if (settings.global["noRocks_removeTrees"].value == false and entity.type == "decorative") or
-            (entity.type == "tree" and settings.global["noRocks_removeTrees"].value == false) or
-            (settings.global["noRocks_removeTrees"].value == false and
+        if  entity.type == "decorative" or
+            (entity.type == "tree" and settings.startup["noRocks_removeTrees"].value == true) or
+            (settings.startup["noRocks_removeRocks"].value == true and
                (entity.name == "stone-rock" or
                entity.name == "red-desert-rock-huge-01" or
                entity.name == "red-desert-rock-huge-02" or
@@ -16,7 +16,7 @@ script.on_event(defines.events.on_chunk_generated, function(e)
         end
      end
 
-    if settings.global["noRocks_layConcrete"].value == true then
+    if settings.startup["noRocks_layConcrete"].value == true then
 
         local pos = e.area.left_top
         local tiles = {}
@@ -41,12 +41,12 @@ script.on_event(defines.events.on_chunk_generated, function(e)
 
 end)
 
-if settings.global["noRocks_giveWood"].value == true then
+if settings.startup["noRocks_giveWood"].value == true then
 
     script.on_event(defines.events.on_player_created, function(event)
         local player = game.players[event.player_index]
             --filters
         local inventory = player.get_inventory(defines.inventory.player_quickbar)
-        player.insert{name="raw-wood", count = settings.global["noRocks_giveWoodAmount"].value}
+        player.insert{name="raw-wood", count = settings.startup["noRocks_giveWoodAmount"].value}
     end)
 end
