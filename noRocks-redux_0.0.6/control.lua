@@ -1,3 +1,20 @@
+local entityNamesToRemove = {
+    "sand-rock-big",
+    "sand-rock-medium",
+    "sand-rock-smal",
+    "rock-big",
+    "rock-huge",
+    "rock-medium"
+}
+
+function in_table(table, item)
+    for _,v in pairs(table) do
+        if v == item then
+            return true
+        end
+        return false
+    end
+end
 
 script.on_event(defines.events.on_chunk_generated, function(e)
 
@@ -5,15 +22,7 @@ script.on_event(defines.events.on_chunk_generated, function(e)
     for key, entity in pairs(e.surface.find_entities(e.area)) do
         if  entity.type == "decorative" or
             (entity.type == "tree" and settings.startup["noRocks_removeTrees"].value == true) or
-            (settings.startup["noRocks_removeRocks"].value == true and
-               (entity.name == "stone-rock" or
-               entity.name == "red-desert-rock-huge-01" or
-               entity.name == "red-desert-rock-huge-02" or
-               entity.name == "red-desert-rock-big-01" or
-               entity.name == "sand-rock-big" or
-               entity.name == "sand-rock-medium" or
-               entity.name == "sand-rock-smal")
-            ) -- should go and find a way to change this from plain text to a table --
+            (settings.startup["noRocks_removeRocks"].value == true and in_table(entityNamesToRemove, entity.name))
         then
             entity.destroy()
         end
