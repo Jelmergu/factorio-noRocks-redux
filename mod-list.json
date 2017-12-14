@@ -1,0 +1,244 @@
+{
+  "mods": [
+    {
+      "name": "base",
+      "enabled": true
+    },
+    {
+      "name": "autofill",
+      "enabled": true
+    },
+    {
+      "name": "belt-reverser",
+      "enabled": true
+    },
+    {
+      "name": "BeltBrush15",
+      "enabled": true
+    },
+    {
+      "name": "beltSorter",
+      "enabled": true
+    },
+    {
+      "name": "bobassembly",
+      "enabled": true
+    },
+    {
+      "name": "bobelectronics",
+      "enabled": true
+    },
+    {
+      "name": "bobgreenhouse",
+      "enabled": true
+    },
+    {
+      "name": "bobinserters",
+      "enabled": true
+    },
+    {
+      "name": "boblibrary",
+      "enabled": true
+    },
+    {
+      "name": "boblogistics",
+      "enabled": true
+    },
+    {
+      "name": "bobmining",
+      "enabled": true
+    },
+    {
+      "name": "bobmods_gfxtweak",
+      "enabled": true
+    },
+    {
+      "name": "bobmodules",
+      "enabled": true
+    },
+    {
+      "name": "bobores",
+      "enabled": true
+    },
+    {
+      "name": "bobplates",
+      "enabled": true
+    },
+    {
+      "name": "bobpower",
+      "enabled": true
+    },
+    {
+      "name": "bobrevamp",
+      "enabled": true
+    },
+    {
+      "name": "bobtech",
+      "enabled": true
+    },
+    {
+      "name": "bobvehicleequipment",
+      "enabled": true
+    },
+    {
+      "name": "botReplacer",
+      "enabled": true
+    },
+    {
+      "name": "Bottleneck",
+      "enabled": true
+    },
+    {
+      "name": "BottleneckLogistics",
+      "enabled": true
+    },
+    {
+      "name": "brighter-locomotive-color-mask",
+      "enabled": true
+    },
+    {
+      "name": "brighter-wagon-color-mask",
+      "enabled": true
+    },
+    {
+      "name": "BurnerLeech A15 Fix",
+      "enabled": true
+    },
+    {
+      "name": "CableSwapper",
+      "enabled": true
+    },
+    {
+      "name": "CopyAssemblerPipeDirection",
+      "enabled": true
+    },
+    {
+      "name": "cut-and-paste",
+      "enabled": true
+    },
+    {
+      "name": "Factorissimo2",
+      "enabled": true
+    },
+    {
+      "name": "FARL",
+      "enabled": true
+    },
+    {
+      "name": "FNEI",
+      "enabled": true
+    },
+    {
+      "name": "folk-logistic-wagon",
+      "enabled": true
+    },
+    {
+      "name": "folk-stopthat",
+      "enabled": true
+    },
+    {
+      "name": "Foreman",
+      "enabled": true
+    },
+    {
+      "name": "GlobalConstantCombinator",
+      "enabled": true
+    },
+    {
+      "name": "Induction Charging",
+      "enabled": true
+    },
+    {
+      "name": "ItemCount",
+      "enabled": true
+    },
+    {
+      "name": "LoaderRedux",
+      "enabled": false
+    },
+    {
+      "name": "logistic-research-fix",
+      "enabled": true
+    },
+    {
+      "name": "long-reach",
+      "enabled": true
+    },
+    {
+      "name": "More-Locomotives",
+      "enabled": true
+    },
+    {
+      "name": "noRocks-redux",
+      "enabled": true
+    },
+    {
+      "name": "PipePressureMeter",
+      "enabled": true
+    },
+    {
+      "name": "PreciousPreciousCaffeine",
+      "enabled": true
+    },
+    {
+      "name": "qol_research",
+      "enabled": true
+    },
+    {
+      "name": "remove_mod_names",
+      "enabled": true
+    },
+    {
+      "name": "rso-mod",
+      "enabled": false
+    },
+    {
+      "name": "SatelliteRadar",
+      "enabled": true
+    },
+    {
+      "name": "ShinyBobGFX",
+      "enabled": true
+    },
+    {
+      "name": "SmarterBotRecharge",
+      "enabled": true
+    },
+    {
+      "name": "Squeak Through",
+      "enabled": true
+    },
+    {
+      "name": "TrainDriver",
+      "enabled": true
+    },
+    {
+      "name": "upgrade-machines",
+      "enabled": true
+    },
+    {
+      "name": "upgrade-planner",
+      "enabled": true
+    },
+    {
+      "name": "UraniumRobots",
+      "enabled": false
+    },
+    {
+      "name": "useful_equipment",
+      "enabled": true
+    },
+    {
+      "name": "VehicleGrid",
+      "enabled": true
+    },
+    {
+      "name": "VehicleSnap",
+      "enabled": true
+    },
+    {
+      "name": "what_is_it_used_for_15",
+      "enabled": true
+    }
+  ]
+}
