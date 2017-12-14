@@ -9,8 +9,11 @@ script.on_event(defines.events.on_chunk_generated, function(e)
                (entity.name == "stone-rock" or
                entity.name == "red-desert-rock-huge-01" or
                entity.name == "red-desert-rock-huge-02" or
-               entity.name == "red-desert-rock-big-01")
-            )
+               entity.name == "red-desert-rock-big-01" or
+               entity.name == "sand-rock-big" or
+               entity.name == "sand-rock-medium" or
+               entity.name == "sand-rock-smal")
+            ) -- should go and find a way to change this from plain text to a table --
         then
             entity.destroy()
         end

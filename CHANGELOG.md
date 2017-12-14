@@ -1,3 +1,6 @@
+##0.0.5
+- Update to 0.16
+- Added new sand rocks to removal list
 
 ##0.0.4
 - Returned layConcrete function
