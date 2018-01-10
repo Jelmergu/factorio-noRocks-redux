@@ -1,40 +1,40 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.8
 Date: 10. 01. 2018
-  New features
+  New features:
     - Added changelog
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.7
 Date: 15. 12. 2017
-  Fixes
+  Fixes:
     - Corrected loop to check the rocks
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.6
 Date: 14. 12. 2017
-  Fixes
+  Fixes:
     - Corrected names of rocks
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.5
 Date: 14. 12. 2017
-  Update
+  General:
     - Update to 0.16
     - Added new sand rocks to removal list
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.4
-Date: 1. 12. 2017
-  New features
+Date: 01. 12. 2017
+  New features:
     - Added settings for removing rocks(default: on)
     - Added settings for removing trees(default: on)
     - Added settings for placing concrete(default: off)
     - Added settings for adding starting wood to inventory with specifiable amount(default: 100 wood)
-  Returned features
+  Returned features:
     - Returned layConcrete function
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.3
-Date: 3. 11. 2017
-  Upgrade
+Date: 03. 11. 2017
+  Upgrade:
     - Upgraded from captncraig's noRocks
-  Fixes
+  Fixes:
     - Added red desert rocks to removal list
-  Removed functionality
+  Removed functionality:
     - Removed layConcrete function
