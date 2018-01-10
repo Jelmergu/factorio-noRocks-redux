@@ -1,3 +1,6 @@
+##0.0.7
+- Corrected loop to check the rocks
+
 ##0.0.6
 - Corrected names of rocks
 

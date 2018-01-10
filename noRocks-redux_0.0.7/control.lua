@@ -7,24 +7,12 @@ local entityNamesToRemove = {
     "rock-medium"
 }
 
-
---(
---entity.name == "sand-rock-big" or
---        entity.name == "sand-rock-medium" or
---        entity.name == "sand-rock-smal" or
---        entity.name == "rock-big" or
---        entity.name == "rock-huge" or
---        entity.name == "rock-medium")
-
 function in_table(table, item)
     for _,v in pairs(table) do
---        game.print("in_table function checking: " ..item.." == "..v)
         if v == item then
---            game.print(item.." present in table")
             return true
         end
     end
---    game.print(item.." not present in table")
     return false
 end
 
@@ -34,7 +22,7 @@ script.on_event(defines.events.on_chunk_generated, function(e)
     for key, entity in pairs(e.surface.find_entities(e.area)) do
         if  entity.type == "decorative" or
             (entity.type == "tree" and settings.startup["noRocks_removeTrees"].value == true) or
-            (settings.startup["noRocks_removeRocks"].value == true and in_table(entityNamesToRemove, entity.name) == true)
+            (settings.startup["noRocks_removeRocks"].value == true and in_table(entityNamesToRemove, entity.name))
         then
             entity.destroy()
         end
