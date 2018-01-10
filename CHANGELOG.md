@@ -1,3 +1,6 @@
+##0.0.8
+- Added changelog for use in-game
+
 ##0.0.7
 - Corrected loop to check the rocks
 
