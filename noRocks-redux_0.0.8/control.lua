@@ -17,8 +17,7 @@ function in_table(table, item)
 end
 
 script.on_event(defines.events.on_chunk_generated, function(e)
-
-     -- remove everything we don't want
+    -- remove everything we don't want
     for key, entity in pairs(e.surface.find_entities(e.area)) do
         if  entity.type == "decorative" or
             (entity.type == "tree" and settings.startup["noRocks_removeTrees"].value == true) or
