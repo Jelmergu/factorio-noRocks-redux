@@ -1,59 +1,31 @@
-local entityNamesToRemove = {
-    "sand-rock-big",
-    "sand-rock-medium",
-    "sand-rock-smal",
-    "rock-big",
-    "rock-huge",
-    "rock-medium"
-}
-
-function in_table(table, item)
-    for _,v in pairs(table) do
-        if v == item then
-            return true
-        end
-    end
-    return false
-end
 
 script.on_event(defines.events.on_chunk_generated, function(e)
     -- remove everything we don't want
-    for key, entity in pairs(e.surface.find_entities(e.area)) do
+    for _, entity in pairs(e.surface.find_entities(e.area)) do
         if  entity.type == "decorative" or
             (entity.type == "tree" and settings.startup["noRocks_removeTrees"].value == true) or
-            (settings.startup["noRocks_removeRocks"].value == true and in_table(entityNamesToRemove, entity.name))
+            (settings.startup["noRocks_removeRocks"].value == true and entity.prototype.count_as_rock_for_filtered_deconstruction)
         then
             entity.destroy()
         end
      end
-
     if settings.startup["noRocks_layConcrete"].value == true then
-
         local pos = e.area.left_top
         local tiles = {}
-
         for y = 0,32 do
-
             for x = 0,32 do
-
                 pos2 = {x=pos.x + x, y = pos.y+y}
                 local tile = e.surface.get_tile(pos2.x, pos2.y)
-
                 if tile.name ~= "water" and tile.name ~= "deepwater" then
                     table.insert(tiles, {position=pos2, name= "concrete"})
                 end
             end
-
         end
-
         e.surface.set_tiles(tiles)
-
     end
-
 end)
 
 if settings.startup["noRocks_giveWood"].value == true then
-
     script.on_event(defines.events.on_player_created, function(event)
         local player = game.players[event.player_index]
             --filters
