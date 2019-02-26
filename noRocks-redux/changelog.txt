@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.17.0
+Date: 26. 02. 2019
+  General:
+    - Update for 0.17
+---------------------------------------------------------------------------------------------------
+Version: 0.16.9
+Date: 27. 02. 2018
+  New features:
+    - Existing saves will now perform a migration that removes the trees, rocks and lays concrete if the settings call for it
+---------------------------------------------------------------------------------------------------
 Version: 0.0.8
 Date: 16. 02. 2018
   New features:
