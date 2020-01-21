@@ -45,10 +45,7 @@ script.on_event(
 if settings.startup["noRocks_giveWood"].value == true then
     script.on_event(defines.events.on_player_created,
             function(event)
-                local player = game.players[event.player_index]
-                --filters
-                local inventory = player.get_inventory(defines.inventory.player_main)
-                player.insert { name = "wood", count = settings.startup["noRocks_giveWoodAmount"].value }
+                game.players[event.player_index].insert { name = "wood", count = settings.startup["noRocks_giveWoodAmount"].value }
             end
     )
 end

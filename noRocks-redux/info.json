@@ -1,12 +1,12 @@
 {
     "name" :             "noRocks-redux",
     "title" :            "noRocks Redux",
-    "version" :          "0.17.0",
+    "version" :          "0.18.0",
     "date" :             "2017-11-3",
     "author" :           "Jelmergu",
     "dependencies" :     [
         "base >= 0.15"
     ],
-    "factorio_version" : "0.17",
+    "factorio_version" : "0.18",
     "description" :      "Removes rocks and trees as they spawn"
 }
